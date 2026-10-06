@@ -104,6 +104,7 @@
 
 // --- Frontespizio ---
 #page(header: none, footer: none)[
+  #set par(justify: false)
   #v(1.6in)
   #align(center)[
     #text(size: 26pt, weight: "bold", hyphenate: false)[$title$]
@@ -133,7 +134,7 @@ $endif$
 #page(header: none, footer: none)[
   // Titolo scritto a mano: quello di outline() è un heading di livello 1 e aprirebbe un capitolo.
   #block(below: 1.4em, text(size: 21pt, weight: "bold")[Indice])
-  #outline(title: none, depth: 2, indent: auto)
+  #outline(title: none, depth: 1, indent: auto)
 ]
 
 #pagebreak(to: "odd", weak: true)
