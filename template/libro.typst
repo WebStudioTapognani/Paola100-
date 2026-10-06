@@ -1,0 +1,138 @@
+// Template pandoc -> Typst per la versione di stampa. Il formato della pagina è in libro/metadata.yaml.
+// Le variabili tra dollari vengono riempite da pandoc con i dati di libro/metadata.yaml.
+
+#let blockquote(body) = block(
+  width: 100%,
+  inset: (left: 1em, y: 0.4em),
+  stroke: (left: 1.5pt + luma(150)),
+)[
+  #set text(size: 0.95em)
+  #body
+]
+
+#let horizontalrule = align(center, line(length: 40%, stroke: 0.5pt + luma(150)))
+
+#let endnote(num, contents) = [
+  #stack(dir: ltr, spacing: 3pt, super[#num], contents)
+]
+
+#let titolo-libro = [$title$]
+
+#set document(title: titolo-libro, author: "$pdf-author$")
+
+#set page(
+  width: $formato.larghezza$,
+  height: $formato.altezza$,
+  margin: (inside: 2cm, outside: 1.5cm, top: 2cm, bottom: 2.2cm),
+)
+#set text(font: "Libertinus Serif", size: 10.5pt, lang: "it", region: "IT", hyphenate: true)
+#set par(justify: true, leading: 0.62em, spacing: 0.95em)
+#set list(indent: 0.6em)
+#set enum(indent: 0.6em)
+
+// I blocchi di codice sono i prompt da copiare: riquadro grigio, testo monospaziato.
+#show raw: set text(font: "DejaVu Sans Mono", size: 8.3pt)
+#show raw.where(block: true): it => block(
+  width: 100%,
+  fill: luma(242),
+  inset: 8pt,
+  radius: 2pt,
+  breakable: true,
+  it,
+)
+
+#show link: set text(fill: luma(60))
+#set table(stroke: 0.5pt + luma(150))
+// Le tabelle del libro sono brevi: non si spezzano tra due pagine e il testo è allineato a sinistra.
+#show table: it => align(left, block(breakable: false, it))
+
+// Numerazione: capitoli e paragrafi (1, 1.1); i titoli di terzo livello non sono numerati.
+#set heading(numbering: "1.1")
+#show heading.where(level: 3): set heading(numbering: none)
+
+// Apertura di capitolo: sempre su pagina dispari, con un segnaposto che marca la fine del precedente.
+#show heading.where(level: 1): it => {
+  [#metadata("fine-capitolo") <fine-capitolo>]
+  pagebreak(to: "odd", weak: true)
+  v(1.1in)
+  if it.numbering != none {
+    context text(size: 10pt, tracking: 0.1em, upper[Capitolo #counter(heading).display("1")])
+    v(0.5em)
+  }
+  block(text(size: 21pt, weight: "bold", hyphenate: false, it.body))
+  v(1.4em)
+}
+#show heading.where(level: 2): it => block(above: 1.5em, below: 0.8em, sticky: true)[
+  #text(size: 12.5pt, weight: "bold", it)
+]
+#show heading.where(level: 3): it => block(above: 1.2em, below: 0.6em, sticky: true)[
+  #text(size: 10.5pt, weight: "bold", it.body)
+]
+
+// Pagine bianche lasciate per far iniziare i capitoli a destra: niente intestazione né numero.
+#let pagina-vuota(p) = {
+  let apertura-dopo = query(heading.where(level: 1)).any(h => h.location().page() == p + 1)
+  let apertura-qui = query(heading.where(level: 1)).any(h => h.location().page() == p)
+  let fine-qui = query(<fine-capitolo>).any(m => m.location().page() == p)
+  apertura-dopo and not apertura-qui and not fine-qui
+}
+
+#let intestazione = context {
+  let p = here().page()
+  let apertura = query(heading.where(level: 1)).any(h => h.location().page() == p)
+  if apertura or pagina-vuota(p) { return }
+  set text(size: 8.5pt, style: "italic")
+  if calc.even(p) {
+    titolo-libro
+  } else {
+    let precedenti = query(selector(heading.where(level: 1)).before(here()))
+    if precedenti.len() > 0 { align(right, precedenti.last().body) }
+  }
+}
+
+#let pie-pagina = context {
+  let p = here().page()
+  if pagina-vuota(p) { return }
+  set text(size: 9pt)
+  align(if calc.even(p) { left } else { right }, counter(page).display())
+}
+
+// --- Frontespizio ---
+#page(header: none, footer: none)[
+  #v(1.6in)
+  #align(center)[
+    #text(size: 26pt, weight: "bold", hyphenate: false)[$title$]
+$if(subtitle)$
+    #v(0.8em)
+    #text(size: 12.5pt, style: "italic")[$subtitle$]
+$endif$
+$if(tagline)$
+    #v(2.2em)
+    #text(size: 10pt, tracking: 0.04em)[$tagline$]
+$endif$
+    #v(1fr)
+    #text(size: 13pt)[$for(author)$$author$$sep$ · $endfor$]
+    #v(0.6in)
+  ]
+]
+
+// --- Pagina del copyright ---
+#page(header: none, footer: none)[
+  #set text(size: 8.5pt)
+  #set par(justify: false)
+  #v(1fr)
+  $colophon$
+]
+
+// --- Indice ---
+#page(header: none, footer: none)[
+  // Titolo scritto a mano: quello di outline() è un heading di livello 1 e aprirebbe un capitolo.
+  #block(below: 1.4em, text(size: 21pt, weight: "bold")[Indice])
+  #outline(title: none, depth: 2, indent: auto)
+]
+
+#pagebreak(to: "odd", weak: true)
+#counter(page).update(1)
+#set page(header: intestazione, footer: pie-pagina)
+
+$body$

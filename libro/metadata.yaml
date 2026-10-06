@@ -1,0 +1,40 @@
+title: "L'IA in Comune"
+subtitle: "Manuale pratico per chi scrive gli atti: prompt, modelli e regole"
+tagline: "Scritto con l'intelligenza artificiale, con il metodo che insegna"
+author:
+  - Riccardo Tapognani
+pdf-author: "Riccardo Tapognani"
+lang: it-IT
+# Formato della versione di stampa: 15x21 cm è lo standard dei manuali italiani.
+# Prima di caricare il PDF, verifica che sia tra i formati offerti dall'editore.
+formato:
+  larghezza: 15cm
+  altezza: 21cm
+rights: >-
+  © 2026 Riccardo Tapognani. Tutti i diritti riservati. Scritto con
+  l'intelligenza artificiale: contenuti, esempi, scelte e verifiche sono
+  dell'autore. Le opinioni espresse sono personali e non impegnano
+  l'amministrazione presso cui presta servizio.
+colophon: |
+  © 2026 Riccardo Tapognani. Tutti i diritti riservati.
+
+  Nessuna parte di quest'opera può essere riprodotta, archiviata o trasmessa
+  senza il consenso scritto dell'autore, salvo brevi citazioni con
+  l'indicazione della fonte. I prompt e i modelli possono essere usati
+  liberamente nel proprio lavoro d'ufficio.
+
+  **Nota sul metodo.** Questo libro è stato scritto con l'intelligenza
+  artificiale, applicando lo stesso metodo che insegna: l'autore ha deciso
+  struttura e contenuti, fornito esperienza ed esempi, corretto ogni bozza e
+  verificato ogni riferimento normativo. Alla fine di ogni capitolo, la
+  sezione "Dietro le quinte" mostra come è stato scritto; l'Allegato B
+  racconta il processo completo.
+
+  Le opinioni espresse sono personali dell'autore e non impegnano
+  l'amministrazione presso cui presta servizio. I contenuti hanno finalità
+  informative e non sostituiscono la consulenza legale né il controllo del
+  responsabile del procedimento. Le norme citate sono aggiornate alla data
+  della prima edizione: verificare sempre il testo vigente.
+
+  Prima edizione: [mese anno]
+  ISBN: [assegnato dall'editore]

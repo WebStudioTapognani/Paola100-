@@ -1,0 +1,41 @@
+name: Libro
+
+on:
+  push:
+  workflow_dispatch:
+
+jobs:
+  genera:
+    runs-on: ubuntu-24.04
+    steps:
+      - uses: actions/checkout@v4
+
+      # Ubuntu 24.04 installa pandoc 3.1.3, la versione per cui è scritto il template.
+      - name: Installa pandoc
+        run: sudo apt-get update && sudo apt-get install -y pandoc
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Installa le dipendenze
+        run: pip install -r requirements.txt
+
+      - name: Genera PDF, EPUB e DOCX
+        run: python build.py
+
+      - name: Stato di avanzamento
+        run: |
+          {
+            echo '```'
+            python build.py stato
+            echo '```'
+          } >> "$GITHUB_STEP_SUMMARY"
+
+      - uses: actions/upload-artifact@v4
+        with:
+          name: libro
+          path: |
+            dist/*.pdf
+            dist/*.epub
+            dist/*.docx
