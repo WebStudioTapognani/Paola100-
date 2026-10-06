@@ -50,17 +50,22 @@
 #set heading(numbering: "1.1")
 #show heading.where(level: 3): set heading(numbering: none)
 
-// Apertura di capitolo: sempre su pagina dispari, con un segnaposto che marca la fine del precedente.
+// Apertura di capitolo o di parte: sempre su pagina dispari, con un segnaposto che marca la fine del precedente.
 #show heading.where(level: 1): it => {
   [#metadata("fine-capitolo") <fine-capitolo>]
   pagebreak(to: "odd", weak: true)
-  v(1.1in)
-  if it.numbering != none {
-    context text(size: 10pt, tracking: 0.1em, upper[Capitolo #counter(heading).display("1")])
-    v(0.5em)
+  if it.has("label") and it.label == <parte> {
+    v(2.2in)
+    align(center, block(text(size: 20pt, weight: "bold", hyphenate: false, it.body)))
+  } else {
+    v(1.1in)
+    if it.numbering != none {
+      context text(size: 10pt, tracking: 0.1em, upper[Capitolo #counter(heading).display("1")])
+      v(0.5em)
+    }
+    block(text(size: 21pt, weight: "bold", hyphenate: false, it.body))
+    v(1.4em)
   }
-  block(text(size: 21pt, weight: "bold", hyphenate: false, it.body))
-  v(1.4em)
 }
 #show heading.where(level: 2): it => block(above: 1.5em, below: 0.8em, sticky: true)[
   #text(size: 12.5pt, weight: "bold", it)
