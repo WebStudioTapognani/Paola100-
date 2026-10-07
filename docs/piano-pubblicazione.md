@@ -23,7 +23,7 @@ eventuali chiarimenti.
 ```
 
 ## 1. Primo traguardo: la proposta all'editore
-1. Rispondi al questionario per il capitolo 3 (il tuo metodo) → Claude scrive la bozza → tu correggi.
+1. Capitolo campione "Come si scrive un prompt per un atto": scritto. Tu completi i tre [DA SCRIVERE] e le verifiche di `autore/verifiche-capitolo-prompt.md`.
 2. Capitolo campione finito e impaginato.
 3. Manda la proposta a Edizioni Simone con `docs/proposta-editoriale.md`, l'indice e il capitolo campione in PDF.
 4. Se entro 4-6 settimane non rispondono, manda la stessa proposta a Maggioli e Publika.
@@ -34,11 +34,11 @@ eventuali chiarimenti.
 3. Capitoli 1 e 2 per ultimi, così le norme sono aggiornate.
 4. Premessa e Allegati alla fine.
 
-Dopo ogni sessione, una riga in `autore/diario-di-bordo.md`: servirà per "Dietro le quinte" e per l'Allegato B.
+Dopo ogni sessione, una riga in `autore/diario-di-bordo.md`: servirà per "Dietro le quinte" e per l'Allegato I.
 
 ## 3. Revisione
 - [ ] Ogni norma verificata su Normattiva, con la data di aggiornamento nel colophon.
-- [ ] Un lettore esterno (un collega o un segretario comunale) legge almeno i capitoli 3 e 4.
+- [ ] Un lettore esterno (un collega o un segretario comunale) legge almeno il capitolo sul prompt e quello sulle determine.
 - [ ] Nessun dato reale, nessun nome, nessun atto copiato.
 
 ## 4. Il contratto con l'editore: cosa controllare

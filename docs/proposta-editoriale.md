@@ -1,7 +1,7 @@
 # Proposta editoriale
 
 Prima scelta: **Edizioni Simone**. Alternative: Maggioli Editore, Publika.
-Si manda quando sono pronti indice e capitolo campione (il capitolo 3 o il 4). Per la manualistica gli editori decidono sulla proposta, non sul libro finito.
+Si manda quando sono pronti indice e capitolo campione ("Come si scrive un prompt per un atto"). Per la manualistica gli editori decidono sulla proposta, non sul libro finito.
 L'indirizzo per le proposte è sul sito dell'editore, nella sezione contatti o redazione.
 
 ## Email di accompagnamento
@@ -11,9 +11,11 @@ Oggetto: Proposta editoriale – "L'IA in Comune. Manuale pratico per chi scrive
 
 Gentile Redazione,
 
-vi propongo un manuale pratico sull'uso dell'intelligenza artificiale per
-scrivere gli atti negli uffici comunali: determine, delibere, verbali,
-controllo privacy prima della pubblicazione, PIAO, risposte ai cittadini.
+vi propongo un manuale normativo e operativo sull'uso dell'intelligenza
+artificiale per scrivere gli atti negli enti locali: AI Act, L. 132/2025 e
+GDPR approfonditi, un metodo di lavoro verificabile, e una parte operativa
+atto per atto (determine, delibere, verbali, decreti, ordinanze, privacy
+prima della pubblicazione, PIAO, risposte ai cittadini).
 
 Perché ora: l'art. 4 dell'AI Act obbliga gli enti che usano sistemi di IA a
 formare il personale, e la L. 132/2025 ha fissato i principi per l'uso
@@ -41,9 +43,9 @@ Riccardo Tapognani
 ## Scheda del libro
 
 **Titolo:** L'IA in Comune
-**Sottotitolo:** Manuale pratico per chi scrive gli atti: prompt, modelli e regole
+**Sottotitolo:** Manuale normativo e operativo per scrivere gli atti con l'intelligenza artificiale: AI Act, GDPR, metodo e prompt
 **Autore:** Riccardo Tapognani
-**Formato:** circa 120-150 pagine, 15x21 cm, con prompt e modelli pronti da copiare
+**Formato:** circa 450 pagine, 15x21 cm, in quattro parti, con prompt, modelli e checklist pronti da usare
 
 **Sinossi**
 Un manuale operativo per istruttori e funzionari degli enti locali che vogliono usare l'intelligenza artificiale per scrivere atti più velocemente, senza perdere correttezza e senza violare la protezione dei dati. Ogni capitolo affronta un tipo di atto con lo stesso schema: il problema, il prompt da copiare, un esempio prima e dopo, gli errori tipici, la checklist prima della firma. Il libro spiega anche cosa si può fare e cosa no secondo AI Act, L. 132/2025 e GDPR, come controllare gli atti prima della pubblicazione all'Albo, come trovare i riferimenti normativi superati, e propone un modello di disciplinare interno sull'uso dell'IA.
@@ -57,20 +59,42 @@ Dipendenti degli enti locali che scrivono atti (segreterie generali, uffici di s
 - È operativo: prompt e checklist si usano subito, senza competenze tecniche.
 
 **Indice**
-Premessa
-1. Le regole del gioco: AI Act, L. 132/2025, GDPR
-2. Quale IA usare in ufficio e con quali dati
-3. Come si scrive un prompt per un atto
-4. Le determine
-5. Le delibere di Giunta e di Consiglio
-6. Verbali, decreti e ordinanze
-7. Privacy prima della pubblicazione
-8. Norme abrogate e riferimenti sbagliati
-9. PIAO e obiettivi sostenibili
-10. Rispondere a cittadini e PEC
-11. Un regolamento interno sull'uso dell'IA
-Allegato A. Cento prompt da copiare
-Allegato B. Come è stato scritto questo libro
+Premessa  
+**Parte I. Il quadro: dati, norme e responsabilità**  
+1. L'IA è già in ufficio  
+2. L'AI Act per l'ente locale  
+3. La legge italiana sull'IA e le regole nazionali per la PA  
+4. GDPR e IA generativa (I): i principi e i dati nel prompt  
+5. GDPR e IA generativa (II): fornitori, trasferimenti, DPIA e incidenti  
+**Parte II. Il metodo: scrivere atti con l'IA**  
+6. Capire lo strumento: cosa fa un modello linguistico  
+7. Quale IA usare in ufficio e con quali dati  
+8. Come si scrive un prompt per un atto  
+9. La lingua degli atti: regole di chiarezza da dare all'IA  
+10. Verificare tutto: norme abrogate, riferimenti inventati, vigenza  
+11. Dal prompt al flusso di lavoro: l'IA come moltiplicatore di efficienza  
+**Parte III. Manuale operativo: atto per atto**  
+12. L'istruttoria con l'IA: leggere, sintetizzare, confrontare  
+13. Le determine  
+14. Le delibere  
+15. Verbali, decreti e ordinanze  
+16. Privacy prima della pubblicazione  
+17. PIAO e obiettivi  
+18. Rispondere a cittadini e PEC  
+**Parte IV. Governance: regole interne, tracciabilità, formazione, acquisti**  
+19. Un regolamento interno sull'uso dell'IA  
+20. Tracciabilità: documentare l'uso dell'IA negli atti  
+21. Formare il personale: alfabetizzazione e piano formativo  
+22. Scegliere e acquistare uno strumento di IA  
+Allegato A. Cento prompt pronti per l'ufficio  
+Allegato B. Modelli di atto commentati  
+Allegato C. Il file di stile: modello completo e varianti  
+Allegato D. Checklist operative  
+Allegato E. Modelli di governance  
+Allegato F. Testi normativi essenziali e calendario  
+Allegato G. Glossario  
+Allegato H. Fonti, studi e risorse  
+Allegato I. Come è stato scritto questo libro
 
 **Sviluppi possibili**
 Aggiornamento annuale con le novità normative; volumi per settore (anagrafe, tributi, servizi sociali, ufficio tecnico); prompt e modelli scaricabili.
