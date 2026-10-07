@@ -90,7 +90,7 @@ Lo schema dice al modello cosa scrivere. Il file di stile gli dice come.
 
 Chi scrive per un responsabile conosce il ciclo: prepari la bozza, il responsabile la corregge, la volta dopo ricordi metà delle correzioni. L'IA non le conserva in modo affidabile tra una conversazione e l'altra; dove c'è una memoria, decide il sistema cosa ricordare. Il file di stile trasforma le correzioni in regole scritte, che controlli tu.
 
-**[DA SCRIVERE]** In prima persona, 80-120 parole: come è nato il tuo file di stile dalle correzioni che fai alle bozze dell'IA; una regola con esempio inventato; quante revisioni prima che fosse stabile. Niente ufficio, colleghi o atti reali.
+Il passaggio delicato è dalla correzione alla regola. Si mette la bozza accanto alla versione firmata e, per ogni differenza, ci si chiede se riguarda solo quel caso o un'abitudine di chi firma. Le abitudini si scrivono come regole: una riga, un obbligo o un divieto che si possa controllare, con un esempio. Una regola inventata: nell'oggetto, prima l'azione e poi la materia; quindi "Affidamento del servizio di banca dati giuridica", non "Banca dati giuridica – affidamento del servizio". Poi si prova il file su una bozza nuova: se il modello applica male una regola, va riscritta più precisa, non più lunga. Il file è stabile quando le correzioni che restano riguardano il merito, non lo stile.
 
 ### Come raccoglierle
 
@@ -339,7 +339,7 @@ Elenco fornito: [incolla di nuovo l'elenco delle norme]
 
 Non è una verifica, è una lista di lavoro: comincia dagli "aggiunti" e dagli "articolo diverso". Anche questa classificazione può sbagliare: confronta il totale con una ricerca di "art." nel testo.
 
-**[DA SCRIVERE]** In prima persona, 80-120 parole: l'art. 23 della L. 62/2005 nella bozza generica: come te ne sei accorto e quanto è durata la verifica.
+Un caso dell'esperimento mostra perché servono tutti e tre i controlli. Per il divieto di rinnovo tacito, una delle bozze generiche citava l'art. 23 della L. 18 aprile 2005, n. 62. Il controllo di esistenza lo lascia passare: la legge c'è. Quello sul contenuto mostra che l'articolo è una modifica: interveniva sull'art. 6 della L. 24 dicembre 1993, n. 537. Quello sulla vigenza chiude la questione: l'art. 6 è stato abrogato dall'art. 256 del D.Lgs. 12 aprile 2006, n. 163. Il divieto resta, affermato dalla giurisprudenza amministrativa: la bozza aveva ragione sul principio e torto sulla fonte. Un riferimento esistente e pertinente è il più difficile da scartare: per questo la verifica segue il rinvio fino alla norma modificata.
 
 ## L'IA come moltiplicatore: dove fa risparmiare tempo, e dove no
 
@@ -359,7 +359,7 @@ Il risparmio dipende dal compito, e il confronto giusto è con il copia e incoll
 
 Il guadagno viene dal metodo, non dallo strumento. Parte del tempo guadagnato sulla bozza va reinvestita nella verifica: altrimenti non hai risparmiato tempo, hai spostato il rischio su chi firma.
 
-**[DA SCRIVERE]** In prima persona, 60-100 parole: i tempi su un caso inventato, senza IA (copiando un atto inventato), con il prompt generico e con il metodo completo, verifica compresa. Limite: un solo caso.
+*Prova tu.* Prendi un atto che conosci bene e un caso inventato, e scrivilo tre volte: senza IA, partendo dall'atto dell'anno prima; con un prompt generico; con il metodo completo. Cronometra ogni versione fino al testo che firmeresti, non fino alla prima bozza: il tempo comprende prompt, lettura, verifica delle norme e correzioni, anche nella versione copiata, che può portarsi dietro riferimenti superati. Annota quanti errori trovi in ciascuna. Dalla seconda volta il caso lo conosci già: se ripeti la prova, cambia l'ordine. Un solo atto non basta per decidere: prova anche altri tipi di atto, a cominciare da quelli della tabella.
 
 ## Checklist del metodo
 
@@ -528,5 +528,3 @@ Cosa ha sbagliato l'IA, e la revisione ha intercettato:
 - l'elenco delle norme del prompt strutturato non comprendeva l'art. 192 del TUEL: un errore del metodo, non del modello.
 
 Le fonti istituzionali (Normattiva, Gazzetta Ufficiale, EUR-Lex) non erano raggiungibili dall'ambiente di lavoro: i riscontri sono stati fatti su più fonti secondarie concordanti.
-
-**[DA SCRIVERE]** Le tue correzioni a questa bozza e l'esito dei riscontri sui testi ufficiali, prima della stampa.

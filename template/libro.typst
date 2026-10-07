@@ -31,7 +31,7 @@
 #set enum(indent: 0.6em)
 
 // I blocchi di codice sono i prompt da copiare: riquadro grigio, testo monospaziato.
-#show raw: set text(font: "DejaVu Sans Mono", size: 7.8pt)
+#show raw: set text(font: "DejaVu Sans Mono", size: 8.2pt)
 #show raw.where(block: true): it => block(
   width: 100%,
   fill: luma(242),
@@ -56,6 +56,8 @@
 #show heading.where(level: 1): it => {
   [#metadata("fine-capitolo") <fine-capitolo>]
   pagebreak(to: "odd", weak: true)
+  // Le note ripartono da 1 a ogni capitolo, parte o allegato.
+  counter(footnote).update(0)
   if it.has("label") and it.label == <parte> {
     v(2.2in)
     align(center, block(text(size: 20pt, weight: "bold", hyphenate: false, it.body)))

@@ -23,7 +23,9 @@ SEGNAPOSTO = re.compile(r"\[DA SCRIVERE\]")
 
 
 def pandoc(*argomenti):
-    comando = ["pandoc", "--metadata-file", METADATI, *CAPITOLI, *argomenti]
+    # --file-scope: ogni capitolo ha la sua numerazione delle note ([^1], [^2]...)
+    # e pandoc la tiene separata invece di confonderla tra un file e l'altro.
+    comando = ["pandoc", "--file-scope", "--metadata-file", METADATI, *CAPITOLI, *argomenti]
     subprocess.run([str(a) for a in comando], check=True)
 
 
@@ -76,8 +78,8 @@ def stato():
         totale_segnaposto += aperti
         print(f"{capitolo.stem:<42} {parole:>7} {aperti:>12}")
     print(f"{'TOTALE':<42} {totale_parole:>7} {totale_segnaposto:>12}")
-    # Circa 260 parole per pagina nel formato 15x21 con questo corpo del testo.
-    print(f"Stima: circa {totale_parole // 260} pagine di testo")
+    # Circa 340 parole per pagina nel formato 17x24 con questo corpo del testo.
+    print(f"Stima: circa {totale_parole // 340} pagine di testo")
 
 
 FORMATI = {"pdf": pdf, "epub": epub, "docx": docx}

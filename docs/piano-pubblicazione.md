@@ -23,7 +23,7 @@ eventuali chiarimenti.
 ```
 
 ## 1. Primo traguardo: la proposta all'editore
-1. Capitolo campione "Come si scrive un prompt per un atto": scritto. Tu completi i tre [DA SCRIVERE] e le verifiche di `autore/verifiche-capitolo-prompt.md`.
+1. Manoscritto completo. Leggilo tutto e fallo tuo (correzioni, tagli, aggiunte): è la condizione perché sia un'opera tua anche per la legge. Chiudi le verifiche di `autore/verifiche-libro.md`.
 2. Capitolo campione finito e impaginato.
 3. Manda la proposta a Edizioni Simone con `docs/proposta-editoriale.md`, l'indice e il capitolo campione in PDF.
 4. Se entro 4-6 settimane non rispondono, manda la stessa proposta a Maggioli e Publika.
@@ -53,7 +53,7 @@ Se gli editori dicono no, Youcanprint resta coerente con l'obiettivo:
 - l'editore è Youcanprint, con il suo ISBN gratuito; tu concedi solo una licenza non esclusiva e resti titolare dei diritti;
 - royalty: 20% del prezzo di copertina sul cartaceo venduto nei negozi (30% sul loro store), 50% sull'ebook negli store (70% sul loro);
 - distribuzione in libreria e negli store online (Amazon, Feltrinelli, Mondadori, Hoepli…), ma il venditore è Youcanprint, non tu;
-- prima di caricare il PDF controlla che il formato 15x21 sia tra quelli disponibili. Se non c'è, si cambia in `libro/metadata.yaml` e il libro si reimpagina da solo.
+- prima di caricare il PDF controlla che il formato 17x24 sia tra quelli disponibili. Se non c'è, si cambia in `libro/metadata.yaml` e il libro si reimpagina da solo.
 
 ## 6. Tasse
 Le royalty pagate da un editore sono diritti d'autore: di norma niente partita IVA né contributi INPS. L'editore applica di solito la ritenuta d'acconto, e il reddito si dichiara nel 730 con una deduzione forfettaria del 25%, che sale al 40% sotto i 35 anni. Conferma con il CAF prima della dichiarazione.

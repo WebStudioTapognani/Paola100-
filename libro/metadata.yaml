@@ -5,11 +5,11 @@ author:
   - Riccardo Tapognani
 pdf-author: "Riccardo Tapognani"
 lang: it-IT
-# Formato della versione di stampa: 15x21 cm è lo standard dei manuali italiani.
+# Formato della versione di stampa: 17x24 cm, quello dei manuali professionali di diritto.
 # Prima di caricare il PDF, verifica che sia tra i formati offerti dall'editore.
 formato:
-  larghezza: 15cm
-  altezza: 21cm
+  larghezza: 17cm
+  altezza: 24cm
 rights: >-
   © 2026 Riccardo Tapognani. Tutti i diritti riservati. Scritto con
   l'intelligenza artificiale: contenuti, esempi, scelte e verifiche sono

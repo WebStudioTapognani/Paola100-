@@ -1,13 +1,13 @@
 # Proposta editoriale
 
 Prima scelta: **Edizioni Simone**. Alternative: Maggioli Editore, Publika.
-Si manda quando sono pronti indice e capitolo campione ("Come si scrive un prompt per un atto"). Per la manualistica gli editori decidono sulla proposta, non sul libro finito.
+Il manoscritto è completo. Allega la scheda, l'indice e il capitolo "Come si scrive un prompt per un atto" in PDF; il manoscritto intero si manda se l'editore lo chiede.
 L'indirizzo per le proposte è sul sito dell'editore, nella sezione contatti o redazione.
 
 ## Email di accompagnamento
 
 ```
-Oggetto: Proposta editoriale – "L'IA in Comune. Manuale pratico per chi scrive gli atti"
+Oggetto: Proposta editoriale – "L'IA in Comune. Manuale normativo e operativo per scrivere gli atti con l'intelligenza artificiale"
 
 Gentile Redazione,
 
@@ -33,7 +33,7 @@ errori dell'IA e le correzioni dell'autore. È la dimostrazione pratica che
 il metodo funziona, con la responsabilità che resta alla persona.
 
 Allego la scheda del libro, l'indice e un capitolo campione.
-Il manoscritto completo può essere consegnato entro [data].
+Il manoscritto è completo (circa 520 pagine) e posso inviarlo subito.
 
 Cordiali saluti,
 Riccardo Tapognani
@@ -45,7 +45,7 @@ Riccardo Tapognani
 **Titolo:** L'IA in Comune
 **Sottotitolo:** Manuale normativo e operativo per scrivere gli atti con l'intelligenza artificiale: AI Act, GDPR, metodo e prompt
 **Autore:** Riccardo Tapognani
-**Formato:** circa 450 pagine, 15x21 cm, in quattro parti, con prompt, modelli e checklist pronti da usare
+**Formato:** manoscritto completo di circa 520 pagine nel formato 17x24 cm, in quattro parti più nove allegati, con prompt, modelli di atto e checklist pronti da usare
 
 **Sinossi**
 Un manuale operativo per istruttori e funzionari degli enti locali che vogliono usare l'intelligenza artificiale per scrivere atti più velocemente, senza perdere correttezza e senza violare la protezione dei dati. Ogni capitolo affronta un tipo di atto con lo stesso schema: il problema, il prompt da copiare, un esempio prima e dopo, gli errori tipici, la checklist prima della firma. Il libro spiega anche cosa si può fare e cosa no secondo AI Act, L. 132/2025 e GDPR, come controllare gli atti prima della pubblicazione all'Albo, come trovare i riferimenti normativi superati, e propone un modello di disciplinare interno sull'uso dell'IA.

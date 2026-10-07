@@ -43,5 +43,5 @@ Dipendente comunale con poco tempo: istruttore o funzionario che scrive atti. Co
 
 ## Lunghezza
 - Capitolo: 3.000-6.000 parole, note escluse.
-- Libro: circa 450 pagine nel formato 15x21 (stima del direttore editoriale per l'indice in quattro parti).
+- Libro: circa 520 pagine nel formato 17x24.
 - Controllo con `python build.py stato`.

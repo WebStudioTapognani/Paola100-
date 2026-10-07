@@ -1,6 +1,6 @@
 # L'IA in Comune
 
-Manuale pratico per chi scrive gli atti negli uffici comunali: prompt, modelli e regole.
+Manuale normativo e operativo per scrivere gli atti con l'intelligenza artificiale: AI Act, GDPR, metodo e prompt.
 Autore: Riccardo Tapognani. Scritto con l'intelligenza artificiale, con il metodo che insegna.
 
 ## Cosa c'è qui
@@ -15,14 +15,14 @@ Autore: Riccardo Tapognani. Scritto con l'intelligenza artificiale, con il metod
 | `template/` | impaginazione del PDF di stampa e dell'ebook |
 | `build.py` | genera il libro |
 
-Le parti ancora da scrivere sono segnate con **[DA SCRIVERE]**.
+Il manoscritto è completo: 22 capitoli in quattro parti, premessa e nove allegati. I punti da ricontrollare sui testi ufficiali prima della stampa sono in `autore/verifiche-libro.md`.
 
 ## Scaricare il libro impaginato
 
 A ogni modifica GitHub rigenera il libro da solo:
 1. apri la scheda **Actions** del repository;
 2. clicca sull'ultima esecuzione di **Libro**;
-3. in fondo, sotto **Artifacts**, scarica `libro`: contiene il PDF di stampa (15x21 cm), l'EPUB e il DOCX da mandare all'editore.
+3. in fondo, sotto **Artifacts**, scarica `libro`: contiene il PDF di stampa (17x24 cm), l'EPUB e il DOCX da mandare all'editore.
 
 Nella stessa pagina trovi la tabella con parole scritte e segnaposto ancora aperti per capitolo.
 
