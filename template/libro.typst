@@ -31,7 +31,7 @@
 #set enum(indent: 0.6em)
 
 // I blocchi di codice sono i prompt da copiare: riquadro grigio, testo monospaziato.
-#show raw: set text(font: "DejaVu Sans Mono", size: 8.3pt)
+#show raw: set text(font: "DejaVu Sans Mono", size: 7.8pt)
 #show raw.where(block: true): it => block(
   width: 100%,
   fill: luma(242),
@@ -44,6 +44,8 @@
 #show link: set text(fill: luma(60))
 #set table(stroke: 0.5pt + luma(150))
 // Le tabelle del libro sono brevi: non si spezzano tra due pagine e il testo è allineato a sinistra.
+#show table: set par(justify: false)
+#show table: set text(size: 9pt)
 #show table: it => align(left, block(breakable: false, it))
 
 // Numerazione: capitoli e paragrafi (1, 1.1); i titoli di terzo livello non sono numerati.

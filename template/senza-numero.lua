@@ -3,6 +3,9 @@
 --   solo i titoli di primo livello, non i loro paragrafi.
 -- {.parte}: "# Il metodo {.parte}" diventa "Parte II. Il metodo", con pagina
 --   d'apertura propria; i capitoli continuano la numerazione.
+-- Blocchi di codice (i prompt): nel sorgente le frasi lunghe vanno a capo per
+--   leggibilità; una riga che inizia in minuscolo continua la precedente, così
+--   nel libro va a capo solo dove serve.
 local ROMANI = { "I", "II", "III", "IV", "V", "VI", "VII", "VIII", "IX", "X" }
 local parti = 0
 
@@ -38,4 +41,17 @@ function Header(el)
       in_typst(el.content)
     )
   )
+end
+
+function CodeBlock(el)
+  local righe = {}
+  for riga in (el.text .. "\n"):gmatch("(.-)\n") do
+    if #righe > 0 and riga:match("^%l") then
+      righe[#righe] = righe[#righe] .. " " .. riga
+    else
+      table.insert(righe, riga)
+    end
+  end
+  el.text = table.concat(righe, "\n")
+  return el
 end
